@@ -64,7 +64,7 @@ function initMap() {
 // 加载房源数据
 async function loadHouseData() {
     try {
-        const response = await fetch('geo_data.json');
+        const response = await fetch('listings.json');
         houseData = await response.json();
         applyFilters();
     } catch (error) {
